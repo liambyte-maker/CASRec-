@@ -82,7 +82,9 @@ Query (Q)
 Key (K)
 Value (V)
 
-Attention(Q,K,V) = softmax(QK^T / √d)V
+$$
+Attention(Q,K,V)=softmax(\frac{QK^T}{\sqrt{d}})V
+$$
 
 用于建模商品之间的关联关系。
 
@@ -91,12 +93,9 @@ Attention(Q,K,V) = softmax(QK^T / √d)V
 Binary Cross Entropy (BCE)
 
 $$
-L
-=
--y\log(\hat{y})
--
-(1-y)\log(1-\hat{y})
+L=-y\log(\hat y)-(1-y)\log(1-\hat y)
 $$
+
 其中：
 
 - y 表示真实标签（点击为1，未点击为0）
@@ -139,9 +138,5 @@ Sequential Recommendation
 Cold-Start Recommendation
 Transformer-based Recommenders
 Multimodal Recommendation
-
-
-
-
 
 
