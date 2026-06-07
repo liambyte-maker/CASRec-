@@ -41,9 +41,9 @@ Cold-Start Item
 
 The confidence score is computed as:
 
-```text
-g = sigmoid(Wx + b)
-```
+$$
+g=\sigma(Wx+b)
+$$
 
 where:
 
@@ -59,9 +59,9 @@ A larger value of g indicates a more reliable Item ID Embedding.
 
 The final item representation is:
 
-```text
-e = g × e_id + (1-g) × e_feat
-```
+$$
+e = g \cdot e_{id} + (1-g)\cdot e_{feat}
+$$
 
 where:
 
@@ -76,9 +76,9 @@ This allows the model to automatically adapt to both popular and cold-start item
 
 SASRec captures user interests through self-attention:
 
-```text
-Attention(Q,K,V) = softmax(QK^T / √d)V
-```
+$$
+Attention(Q,K,V)=softmax(\frac{QK^T}{\sqrt{d}})V
+$$
 
 The self-attention mechanism models both short-term and long-term user preferences.
 
@@ -88,9 +88,9 @@ The self-attention mechanism models both short-term and long-term user preferenc
 
 CASRec follows the original SASRec training strategy and uses Binary Cross Entropy (BCE) loss:
 
-```text
-L = -y log(ŷ) - (1-y) log(1-ŷ)
-```
+$$
+L=-y\log(\hat y)-(1-y)\log(1-\hat y)
+$$
 
 where:
 
