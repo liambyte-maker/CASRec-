@@ -122,26 +122,28 @@ NumPy
 Pandas
 Scikit-Learn
 
-Future Work
+## Future Work
 
 未来计划进一步探索：
 
-Multimodal Recommendation
-CLIP-based Representation
-Graph Neural Networks
-LLM-based Recommendation
-Agent Recommendation Systems
+- Multimodal Recommendation
+- CLIP-based Representation
+- Graph Neural Networks
+- LLM-based Recommendation
+- Agent Recommendation Systems
 
-作者
+---
 
-Jinming Liu
+## Author
 
-研究方向：
+**Jinming Liu**
 
-Recommendation Systems
-Sequential Recommendation
-Cold-Start Recommendation
-Transformer-based Recommenders
-Multimodal Recommendation
+### Research Interests
+
+- Recommendation Systems
+- Sequential Recommendation
+- Cold-Start Recommendation
+- Transformer-based Recommenders
+- Multimodal Recommendation
 
 
