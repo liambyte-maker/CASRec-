@@ -33,26 +33,23 @@ Quality(embedding_cold​)≪Quality(embedding_popular​)
 模型会自动发现：商品之间的关系
 
 ## 创新点2：多因素置信度网络
-
+https://github.com/liambyte-maker/CASRec-/blob/main/README_CN.md
 CASRec认为： 不同商品的Embedding可信度不同
 
 因此构建Multi-Factor Confidence Network，评估item Id embedding的可靠性
 输入特征包括：
-Interaction Count
-
-CTR
-
-Popularity
-
-Item Age
-
-Text Quality
-
-Image Quality
+✳Interaction Count
+✳CTR
+✳Popularity
+✳Item Age
+✳Text Quality
+✳Image Quality
 
 输入MLP：
 
-g=σ(Wx+b)
+$$
+g=\sigma(Wx+b)
+$$
 
 输出：g∈[0,1]
 其中 g 表示当前物品 ID Embedding 的可信度。
