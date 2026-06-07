@@ -72,7 +72,81 @@ CASRec增加：特征Embedding
 e=g*e_id+(1−g)e_feature
 
 CASRec能够自动判断当前商品应该相信ID，还是内容特征
-	​
+
+## Self-Attention 建模
+
+计算
+Query (Q)
+Key (K)
+Value (V)
+
+$$
+Attention(Q,K,V)
+=
+softmax
+\left(
+\frac{QK^T}{\sqrt{d}}
+\right)
+V
+$$
+
+用于建模商品之间的关联关系。
+
+## 训练目标​
+
+Binary Cross Entropy (BCE)
+
+$$
+L
+=
+-y\log(\hat y)
+-
+(1-y)\log(1-\hat y)
+$$
+
+其中：
+
+- y 表示真实标签（点击为1，未点击为0）
+- ŷ 表示模型预测的点击概率
+
+训练目标是使：
+
+- 用户实际点击的商品获得更高预测概率
+- 用户未点击的商品获得更低预测概率
+
+从而提升推荐结果的准确性。
+
+技术栈
+Python
+PyTorch
+Transformer
+SASRec
+NumPy
+Pandas
+Scikit-Learn
+
+Future Work
+
+未来计划进一步探索：
+
+Multimodal Recommendation
+CLIP-based Representation
+Graph Neural Networks
+LLM-based Recommendation
+Agent Recommendation Systems
+
+作者
+
+Jinming Liu
+
+研究方向：
+
+Recommendation Systems
+Sequential Recommendation
+Cold-Start Recommendation
+Transformer-based Recommenders
+Multimodal Recommendation
+
 
 
 
