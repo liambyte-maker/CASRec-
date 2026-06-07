@@ -108,6 +108,11 @@ $$
 
 从而提升推荐结果的准确性。
 
+
+<img width="3295" height="1114" alt="_app_data_所有对话_主对话_CASRec_Colorful drawio (3)" src="https://github.com/user-attachments/assets/b63f341f-c571-42e4-8161-8a6552602a7c" />
+
+
+
 技术栈
 Python
 PyTorch
