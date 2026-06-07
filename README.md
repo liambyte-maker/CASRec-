@@ -12,7 +12,8 @@ To address this issue, CASRec introduces a confidence-aware mechanism that dynam
 
 ## Model Architecture
 
-![CASRec Architecture](figures/casrec_architecture.png)
+<img width="3295" height="1114" alt="_app_data_所有对话_主对话_CASRec_Colorful drawio (3)" src="https://github.com/user-attachments/assets/ab358744-f22c-4bd4-8fc1-db9f336ce8ae" />
+
 
 ### Architecture Overview
 
