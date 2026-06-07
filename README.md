@@ -1,5 +1,12 @@
 CASRec:基于置信度感知自适应融合的序列推荐模型
 项目简介：
 本文基于经典论文《Self-Attentive Sequential Recommendation》进行复现与改进
-SASRec首次将Transformer的self attention机制引入序列推荐任务，通过建模用户历史行为序列中的长期依赖关系预测下一次交互商品
+SASRec首次将Transformer的self attention机制引入序列推荐任务，通过建模用户历史行为序列中的长期依赖关系预测下一次交互商品。由于其优秀的性能和简介的结构，SASRec已成为推荐系统领域最具代表性的Transformer模型之一。
+在完成原论文复现后，我发现SASRec高度依赖Item ID Embedding,而现实电商场景中的商品普遍存在长尾分布和冷启动的问题，大量新商品由于缺乏足够的交互数据，导致ID Embedding训练不足，从而影响推荐效果
+
+针对这一问题，本项目提出
+CASRec(Confidence-Aware SASRec)
+通过置信度感知（Confidence-Aware)与自适应融合（Adaptive Fusion)机制，动态决定商品表示中ID特征与内容特征的贡献比例，从而提升长尾商品和冷启动商品的推荐效果。
+
+原始的SASRec结构如下
 
