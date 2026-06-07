@@ -69,7 +69,9 @@ CASRec增加：特征Embedding
 
 后进行自适应融合：
 
-e=g*e_id+(1−g)e_feature
+$$
+e = g \cdot e_{id} + (1-g)\cdot e_{feat}
+$$
 
 CASRec能够自动判断当前商品应该相信ID，还是内容特征
 
@@ -80,15 +82,7 @@ Query (Q)
 Key (K)
 Value (V)
 
-$$
-Attention(Q,K,V)
-=
-softmax
-\left(
-\frac{QK^T}{\sqrt{d}}
-\right)
-V
-$$
+Attention(Q,K,V) = softmax(QK^T / √d)V
 
 用于建模商品之间的关联关系。
 
@@ -99,11 +93,10 @@ Binary Cross Entropy (BCE)
 $$
 L
 =
--y\log(\hat y)
+-y\log(\hat{y})
 -
-(1-y)\log(1-\hat y)
+(1-y)\log(1-\hat{y})
 $$
-
 其中：
 
 - y 表示真实标签（点击为1，未点击为0）
